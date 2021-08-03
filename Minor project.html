@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<script>
+    function changecolor(){
+    var r=Math.floor(Math.random()*256);
+    var g=Math.floor(Math.random()*256);
+    var b=Math.floor(Math.random()*256);
+    var mycolor="rgb("+ r+ ","+g+","+b+")";
+    var mycolor1="rgb("+ g+ ","+b+","+r+")";
+    var mycolor2="rgb("+ b+ ","+r+","+g+")";
+    var mycolor3="rgb("+ r+ ","+b+","+g+")";
+    var mycolor4="rgb("+g + ","+r+","+b+")";
+    var mycolor5="rgb("+ b+ ","+g+","+r+")";
+    var mycolor6="rgb("+ r+ ","+b+","+b+")";
+    var mycolor7="rgb("+ g+ ","+r+","+g+")";
+    var mycolor8="rgb("+ b+ ","+g+","+g+")";
+    var mycolor9="rgb("+ b+ ","+r+","+g+")";
+    var mycolor10="rgb("+ r+ ","+b+","+g+")";
+    var mycolor11="rgb("+ g+ ","+r+","+b+")";
+    var mycolor12="rgb("+ b+ ","+g+","+r+")";
+    var mycolor13="rgb("+r + ","+g+","+b+")";
+    var mycolor14="rgb("+ g+ ","+b+","+r+")";
+    var mycolor15="rgb("+ b+ ","+r+","+g+")";
+    var mycolor16="rgb("+ g+ ","+r+","+r+")";
+    var mycolor17="rgb("+ g+ ","+g+","+g+")";
+    var mycolor18="rgb("+ b+ ","+b+","+b+")";
+    var mycolor19="rgb("+ r+ ","+g+","+r+")";
+    var mycolor20="rgb("+ b+ ","+r+","+r+")";
+    console.log(mycolor);
+    document.getElementById("one").style.background=mycolor;
+    document.getElementById("two").style.background=mycolor1;
+    document.getElementById("three").style.background=mycolor2;
+    document.getElementById("four").style.background=mycolor3;
+    document.getElementById("five").style.background=mycolor4;
+    document.getElementById("six").style.background=mycolor5;
+    document.getElementById("seven").style.background=mycolor6;
+    document.getElementById("eight").style.background=mycolor7;
+    document.getElementById("nine").style.background=mycolor8;
+    document.getElementById("ten").style.background=mycolor9;
+    document.getElementById("eleven").style.background=mycolor10;
+    document.getElementById("twelve").style.background=mycolor11;
+    document.getElementById("thirteen").style.background=mycolor12;
+    document.getElementById("fourteen").style.background=mycolor13;
+    document.getElementById("fifteen").style.background=mycolor14;
+    document.getElementById("sixteen").style.background=mycolor15;
+    document.getElementById("seventeen").style.background=mycolor16;
+    document.getElementById("eighteen").style.background=mycolor17;
+    document.getElementById("nineteen").style.background=mycolor18;
+    document.getElementById("twenty").style.background=mycolor19;
+    document.getElementById("twentyone").style.background=mycolor20;
+    }
+</script>
+<script>
+    var C3audio=new Audio()
+    C3audio.src="c3note.mp3";
+    var D3audio=new Audio()
+    D3audio.src="d3note.mp3";
+    var E3audio=new Audio()
+    E3audio.src="e3note.mp3";
+    var F3audio=new Audio()
+    F3audio.src="f3note.mp3";
+    var G3audio=new Audio()
+    G3audio.src="g3note.mp3";
+    var A3audio=new Audio()
+    A3audio.src="a3note.mp3";
+    var B3audio=new Audio()
+    B3audio.src="b3note.mp3";
+    var C4audio=new Audio()
+    C4audio.src="c4note.mp3";
+    var D4audio=new Audio()
+    D4audio.src="d4note.mp3";
+    var E4audio=new Audio()
+    E4audio.src="e4note.mp3";
+    var F4audio=new Audio()
+    F4audio.src="f4note.mp3";
+    var G4audio=new Audio()
+    G4audio.src="g4note.mp3";
+    var A4audio=new Audio()
+    A4audio.src="a4note.wav";
+    var B4audio=new Audio()
+    B4audio.src="b4note.mp3";
+    var C5audio=new Audio()
+    C5audio.src="c5note.mp3";
+    var D5audio=new Audio()
+    D5audio.src="d5note.mp3";
+    var E5audio=new Audio()
+    E5audio.src="e5note.mp3";
+    var F5audio=new Audio()
+    F5audio.src="f5note.mp3";
+    var G5audio=new Audio()
+    G5audio.src="g5note.mp3";
+    var A5audio=new Audio()
+    A5audio.src="a5note.mp3";
+    var B5audio=new Audio()
+    B5audio.src="b5note.mp3";
+    var Csaudio=new Audio()
+    Csaudio.src="CS3note.mp3";
+    var Dsaudio=new Audio()
+    Dsaudio.src="DS3note.mp3";
+    var Fsaudio=new Audio()
+    Fsaudio.src="FS3note.mp3";
+    var Gsaudio=new Audio()
+    Gsaudio.src="GS3note.mp3";
+    var Asaudio=new Audio()
+    Asaudio.src="AS3note.mp3";
+    var Cs1audio=new Audio()
+    Cs1audio.src="CS4note.mp3";
+    var Ds1audio=new Audio()
+    Ds1audio.src="DS4note.mp3";
+    var Fs1audio=new Audio()
+    Fs1audio.src="FS4note.mp3";
+    var Gs1audio=new Audio()
+    Gs1audio.src="GS4note.mp3";
+    var As1audio=new Audio()
+    As1audio.src="AS4note.mp3";
+    var Cs2audio=new Audio()
+    Cs2audio.src="CS5note.mp3";
+    var Ds2audio=new Audio()
+    Ds2audio.src="DS5note.mp3";
+    var Fs2audio=new Audio()
+    Fs2audio.src="FS5note.mp3";
+    var Gs2audio=new Audio()
+    Gs2audio.src="GS5note.mp3";
+    var As2audio=new Audio()
+    As2audio.src="AS5note.mp3";
+</script>
+<body>
+    <h2 align="center">Virtual Piano</h2>
+    <button id="one" class="C3_Note" OnClick="C3audio.play()">C3</button>
+    <button id="two" class="D3_Note" OnClick="D3audio.play()">D3</button>
+    <button id="three"class="E3_Note" OnClick="E3audio.play()">E3</button>
+    <button id="four" class="F3_Note" OnClick="F3audio.play()">F3</button>
+    <button id="five"class="G3_Note" OnClick="G3audio.play()">G3</button>
+    <button id="six" class="A3_Note" OnClick="A3audio.play()">A3</button>
+    <button id="seven" class="B3_Note" OnClick="B3audio.play()">B3</button>
+    <button id="eight" class="C4_Note" OnClick="C4audio.play()">C4</button>
+    <button id="nine" class="D4_Note" OnClick="D4audio.play()">D4</button>
+    <button id="ten" class="E4_Note" OnClick="E4audio.play()">E4</button>
+    <button id="eleven" class="F4_Note" OnClick="F4audio.play()">F4</button>
+    <button id="twelve" class="G4_Note" OnClick="G4audio.play()">G4</button>
+    <button id="thirteen" class="A4_Note" OnClick="A4audio.play()">A4</button>
+    <button id="fourteen" class="B4_Note" OnClick="B4audio.play()">B4</button>
+    <button id="fifteen" class="C5_Note" OnClick="C5audio.play()">C5</button>
+    <button id="sixteen" class="D5_Note" OnClick="D5audio.play()">D5</button>
+    <button id="seventeen" class="E5_Note" OnClick="E5audio.play()">E5</button>
+    <button id="eighteen" class="F5_Note" OnClick="F5audio.play()">F5</button>
+    <button id="nineteen" class="G5_Note" OnClick="G5audio.play()">G5</button>
+    <button id="twenty" class="A5_Note" OnClick="A5audio.play()">A5</button>
+    <button id="twentyone" class="B5_Note" OnClick="B5audio.play()">B5</button>
+    <button class="Cs_Note" OnClick="Csaudio.play()">C3#</button>
+    <button class="Ds_Note" OnClick="Dsaudio.play()">D3#</button>
+    <button class="Fs_Note" OnClick="Fsaudio.play()">F3#</button>
+    <button class="Gs_Note" OnClick="Gsaudio.play()">G3#</button>
+    <button class="As_Note" OnClick="Asaudio.play()">A3#</button>
+    <button class="Cs1_Note" OnClick="Cs1audio.play()">C4#</button>
+    <button class="Ds1_Note" OnClick="Ds1audio.play()">D4#</button>
+    <button class="Fs1_Note" OnClick="Fs1audio.play()">F4#</button>
+    <button class="Gs1_Note" OnClick="Gs1audio.play()">G4#</button>
+    <button class="As1_Note" OnClick="As1audio.play()">A4#</button>
+    <button class="Cs2_Note" OnClick="Cs2audio.play()">C5#</button>
+    <button class="Ds2_Note" OnClick="Ds2audio.play()">D5#</button>
+    <button class="Fs2_Note" OnClick="Fs2audio.play()">F5#</button>
+    <button class="Gs2_Note" OnClick="Gs2audio.play()">G5#</button>
+    <button class="As2_Note" OnClick="As2audio.play()">A5#</button>
+    <div class="bt" align="center">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button onclick="changecolor()" align="center">Change color</button>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div align="center" >
+        <b><h3 style="font-size: x-large;">Thank you and visit again</h3></b>
+    </div> 
+</body>
+</html>

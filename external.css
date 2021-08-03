@@ -1,0 +1,555 @@
+body{
+    background-image: url(piano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    color:white;
+    font-size:xx-large;
+}
+.bt{
+    color:whitesmoke;
+    block-size: 40px;
+    width: 100px;
+    text-align: center;
+}
+.C3_Note{
+    color:black;
+    position:absolute;
+    width:50px;
+    height:300px;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: white;
+    cursor:pointer;
+    left:250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.D3_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 50px;
+    height:300px;
+    background-color: white;
+    cursor:pointer;
+    left:300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.E3_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width:50px;
+    height:300px;
+    background-color: white;
+    cursor:pointer;
+    left:350px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.F3_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width:50px;
+    height:300px;
+    background-color: white;
+    cursor:pointer;
+    left:400px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.G3_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width:50px;
+    height:300px;
+    background-color: white;
+    cursor:pointer;
+    left:450px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.A3_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width:50px;
+    height:300px;
+    background-color: white;
+    cursor:pointer;
+    left:500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.B3_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width:50px;
+    height:300px;
+    background-color: white;
+    cursor:pointer;
+    left:550px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.C4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:600px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.D4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:650px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.E4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.F4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:750px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.G4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:800px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.A4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:850px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.B4_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:900px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.C5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:950px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.D5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:1000px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.E5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:1050px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.F5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:1100px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.G5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:1150px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.A5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:1200px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.B5_Note{
+    color:black;
+    position:absolute;
+    padding-top: 260px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height:300px;
+    width: 50px;
+    background-color: white;
+    cursor:pointer;
+    left:1250px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.Cs_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:280px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.Ds_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:330px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.Fs_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:430px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.Gs_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:480px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.As_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:530px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.Cs1_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:630px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 12px;
+}
+.Ds1_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:680px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.Fs1_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:780px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.Gs1_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:830px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.As1_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:880px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.Cs2_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:980px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.Ds2_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:1030px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 12px;
+}
+.Fs2_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:1130px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.Gs2_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:1180px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.As2_Note{
+    color:white;
+    position:absolute;
+    padding-top: 190px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width:35px;
+    height: 50px;
+    background-color: black;
+    cursor:pointer;
+    left:1230px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
